@@ -10,4 +10,4 @@ A simple python library, in which you can see books
 
 
 ## 🛠 Skills
-Javascript, HTML, CSS, Python, Flask and SQL
+Javascript, HTML, CSS, Python, Flask and SQL(MariaDB)
