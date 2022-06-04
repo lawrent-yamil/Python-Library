@@ -4,7 +4,7 @@
 A simple python library, in which you can see books 
 
 
-## Authors
+## Author
 
 - [novasuperior](https://github.com/novasuperior)
 
