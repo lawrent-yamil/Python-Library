@@ -1,0 +1,4 @@
+# ignorar el entorno virtual de python env
+env
+__pycache__
+.vscode

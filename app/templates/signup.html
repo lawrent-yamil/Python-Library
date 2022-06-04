@@ -1,0 +1,57 @@
+{% extends './base.html'%}
+
+{% block title %} Sign up {% endblock %}
+
+{% block navbar %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Bilbioteca Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Inicio</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url_for('revistas') }}">Revistas</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('enciclopedia') }}">Enciclopedia</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block bodyO %}
+<div class="container">
+  <div class="row">
+    <!-- hacer un login que este muy bien separado y que tenga un borde  -->
+    <div class="col-md-6 offset-md-3">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Sign up</h4>
+        </div>
+        <div class="card-body">
+          <form method="POST" action="{{ url_for('provar_signup') }}">
+            <div class="form-group">
+              <label for="usuario">Usuario</label>
+              <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
+            </div>
+            <div class="form-group">
+              <label for="cedula">Cedula</label>
+              <input type="password" class="form-control" id="cedula" name="cedula" placeholder="Cedula">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-lg btn-block btn-primary">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
